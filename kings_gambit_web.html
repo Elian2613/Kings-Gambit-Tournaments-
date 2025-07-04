@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King's Gambit Tournaments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0b0c10;
+      color: #fff;
+    }
+    header {
+      background-color: #0b0c10;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #c5a100;
+    }
+    header img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      color: #c5a100;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #d4af37;
+      font-weight: bold;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #d4af37;
+      border-bottom: 1px solid #1f1f1f;
+      padding-bottom: 10px;
+    }
+    .stream {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .stream iframe {
+      border: 2px solid #d4af37;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 500px;
+      height: 280px;
+    }
+    .countdown {
+      font-size: 1.5em;
+      text-align: center;
+      margin-top: 20px;
+      color: #c5a100;
+    }
+    .register-button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #d4af37;
+      color: #0b0c10;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .register-button:hover {
+      background-color: #c5a100;
+    }
+    .players, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .player-card, .gallery-item {
+      background-color: #1a1a1d;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #333;
+    }
+    .player-card h3 {
+      margin: 0;
+      color: #d4af37;
+    }
+    .player-card p {
+      color: #aaa;
+      margin: 8px 0 0;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 2px solid #d4af37;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0b0c10;
+      border-top: 2px solid #c5a100;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/mnt/data/1004830203.png" alt="King's Gambit Logo">
+    <h1>King's Gambit Tournaments</h1>
+  </header>
+
+  <nav>
+    <a href="#about">Sobre el torneo</a>
+    <a href="#live">Partidas en vivo</a>
+    <a href="#players">Jugadores destacados</a>
+    <a href="#gallery">Galería</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <section class="section" id="about">
+    <h2>Sobre el torneo</h2>
+    <p>King's Gambit Tournaments es una plataforma dedicada a la organización de torneos de ajedrez online de alto nivel. Nuestro objetivo es crear una experiencia competitiva, justa y emocionante para todos los participantes, transmitida en vivo para una audiencia global.</p>
+
+    <div class="countdown" id="countdown">Próximo torneo en: cargando...</div>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqt4l3Hy-Ji0_r7mh24CwMGIIfQSX2iOhU79Mm5Khf9dmYBA/viewform?usp=preview" class="register-button" target="_blank">Registrarse al torneo</a>
+  </section>
+
+  <section class="section" id="live">
+    <h2>Partidas en vivo</h2>
+    <div class="stream">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="section" id="players">
+    <h2>Jugadores destacados</h2>
+    <div class="players">
+      <div class="player-card">
+        <h3>Ana López</h3>
+        <p>Campeona 2024 - México</p>
+      </div>
+      <div class="player-card">
+        <h3>Daniel Torres</h3>
+        <p>Top 3 - Colombia</p>
+      </div>
+      <div class="player-card">
+        <h3>Sofía Ramírez</h3>
+        <p>Promesa juvenil - Argentina</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Galería de partidas anteriores</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x250?text=Partida+1" alt="Partida 1">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x250?text=Partida+2" alt="Partida 2">
+      </div>
+      <div class="gallery-item">
+        <img src="https://via.placeholder.com/400x250?text=Partida+3" alt="Partida 3">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contacto</h2>
+    <p>¿Tienes dudas o quieres participar? Contáctanos:</p>
+    <ul>
+      <li><strong style="color:#d4af37">Teléfono:</strong> 7221311073</li>
+      <li><strong style="color:#d4af37">Correo:</strong> edgarelian2613@gmail.com</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 King's Gambit Tournaments. Todos los derechos reservados.
+  </footer>
+
+  <script>
+    const nextTournament = new Date(2025, 6, 20, 18, 0, 0);
+    function updateCountdown() {
+      const now = new Date();
+      const diff = nextTournament - now;
+      if (diff <= 0) {
+        document.getElementById("countdown").innerText = "¡El torneo ha comenzado!";
+        return;
+      }
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      document.getElementById("countdown").innerText =
+        `Próximo torneo en: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+</body>
+</html>
